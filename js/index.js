@@ -2,7 +2,7 @@
 $(document).ready(function () {
     // 获取 id 为 body 里面的文本
     var text = $.ajax({
-            url: "./file/rules.md",
+            url: "https://raw.githubusercontent.com/CFPAOrg/TransRules/master/file/rules.md",
             async: false
         }).responseText,
 
