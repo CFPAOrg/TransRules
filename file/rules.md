@@ -1,6 +1,6 @@
 为了 Minecraft 中 Mod 翻译的统一，以及 Weblate 翻译项目的规范，本文档在社区原有规范文档的基础之上做了部分演绎和扩充，希望各位参与模组翻译的汉化者能尽量遵守本文档中的一些指示，将翻译文件标准化。
 
-如果你对本文档存在建议，或者想要联系我们，请访问我们的 [Discord](https://discord.gg/SGve5Fn) 群组或 QQ 群（630943368）。
+如果你对本文档存在建议，或者想要联系我们，请访问我们的 [GitHub](https://github.com/CFPAOrg/TransRules) 或 QQ 群（630943368）。
 
 依然遵循原文，采用 [WTFPL](http://www.wtfpl.net/about/) 协议，同时附上原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
 
@@ -40,7 +40,7 @@
 
 ## 03.标点符号
 
-> Weblate 上的汉化资源包中添加了 3TUSK 书写的中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
+> 1.12 和 1.16 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
 
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
 	- 原文：`Weighted Pressure Plate (Heavy)`（Minecraft，Mojang）
@@ -48,8 +48,6 @@
 - 遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
 - 对于英文标点符号前或后的空格，请在修改标点符号为中文时删除
 - 仅修改文本当中的标点符号，对于 JSON 的格式标点符号请保留
-
-> 关于中文全角标点的显示问题，请跟踪 [MC-109260](https://bugs.mojang.com/browse/MC-109260)，如果可以的话，请 Vote 一下这个 Issue，或者回复一下“confirmed”，让开发者能够看到这个 Issue。
 
 ## 04.排版
 - 当遇到英文字母、阿拉伯数字等非中文文本时，应在该段文本开头与结尾处加空格与中文文本分开
@@ -77,7 +75,7 @@
 		- 原文：`Patreon Pie`（[Pam's HarvestCraft](https://github.com/MatrexsVigil/harvestcraft)，MatrexsVigil）
 		- 译文：`Patreon 派`
 	- 对于其它的名字，保留原文不翻译
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准列表](http://minecraft-zh.gamepedia.com/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译（注意默认方块、实体、物品是隐藏的，需要手动点击显示）
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译（注意默认方块、实体、物品是隐藏的，需要手动点击显示）
 - 目前可以**参考**原工程的[译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)进行翻译
 - 如果还没有找到，请自行拟定翻译并发送 PR 更新本工程的译名标准化列表，如果实在无法想出翻译，则暂时留为英文
 
@@ -90,12 +88,12 @@
 	- 如果原文本身就在玩梗，或者语气非常轻松，那么也不需要使用非常正式的语言
 		- 原文：`NANI SORE!? BOTANIA IS OUTDATED!?`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 		- 译文：`(つд⊂)なにそれ！？植物魔法版本落后了！？`
-- 如果原文使用了拉丁化的日语，可以将其书写为对应中文的空耳，或者直接保留为罗马音
+- 如果原文使用了拉丁化的日语，可以将其书写为对应中文的[空耳](https://zh.moegirl.org.cn/index.php?title=%E7%A9%BA%E8%80%B3)，或者直接保留为罗马音
 - 如果原文使用了游戏电影等中的梗，请首先参考原出处的中文翻译，如果是日语而没有统一的翻译，则改写为日语原文（在此情况下请保持翻译与否的统一）
 	- 原文：`You notice Botania has updated. It fills you with determination.`（[Botania](https://github.com/Vazkii/Botania)，Vazkii，梗出自于Undertale）
 	- 译文：`你注意到植物魔法已经更新了。这使你充满了决心。`
 - 如果你自己做了一版卖萌形式或者玩梗形式的汉化文件，请不要发送到作者那里作为默认的汉化文件，仅流传在第三方就行了
-- 切勿在语言文件中玩恶俗，月莫之类的梗
+- 切勿在语言文件中玩不适宜的烂梗（尤其是带有较大负面影响的）
 
 ## 07.Mod 名翻译
 
@@ -113,14 +111,40 @@
 - 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
-## 08.署名
+## 08. 特殊字符
+
+主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。而 Minecraft 自带的字库只支持第一平面，无法显示这些字符。
+
+我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
+
+对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。
+
+| 翻译文本 | 转换字符 |                 备注                 |
+| :------: | :----: | :----------------------------------: |
+| [[钅卢]] | `\ue900` |                                      |
+| [[钅杜]] | `\ue901` |                                      |
+| [[钅喜]] | `\ue902` |                                      |
+| [[钅波]] | `\ue903` |                                      |
+| [[钅黑]] | `\ue904` |                                      |
+| [[钅麦]] | `\u9fcf` |                                      |
+| [[钅达]] | `\ue906` |                                      |
+| [[钅仑]] | `\ue907` |                                      |
+| [[钅哥]] | `\u9fd4` |                                      |
+| [[钅尔]] | `\u9fed` |                                      |
+| [[钅夫]] | `\ue90a` |                                      |
+|    镆    | `\u9546` | 此元素名已存在对应字符，无需修改替换    |
+| [[钅立]] | `\ue90c` |                                      |
+| [[石田]] | `\u9fec` |                                      |
+| [[奥气]] | `\u9feb` |                                      |
+
+## 09.署名
 
 - 除非作者在语言文件中专门提供了翻译者署名的地方，请不要添加任何其它标识标明翻译者的名字，特别是作者让你签署 CLA 的情况。你的贡献将会在文件上方的 Contribution 处显示
 - Weblate 上所有的翻译都会通过 GitHub 的 commit 信息查询到，请在注册 Weblate 账户时候尽可能选取 GitHub 注册时候使用的邮箱和用户名
 
-## 09.相关工具
+## 10.相关工具
 
-- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**推荐**）
+- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过期**）
 - Snownee 写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
 - craft 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
