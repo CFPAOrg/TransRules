@@ -1,6 +1,6 @@
 为了 Minecraft 中 Mod 翻译的统一，以及 Weblate 翻译项目的规范，本文档在社区原有规范文档的基础之上做了部分演绎和扩充，希望各位参与模组翻译的汉化者能尽量遵守本文档中的一些指示，将翻译文件标准化。
 
-如果你对本文档存在建议，或者想要联系我们，请访问我们的 [Discord](https://discord.gg/SGve5Fn) 群组。
+如果你对本文档存在建议，或者想要联系我们，请访问我们的 [Discord](https://discord.gg/SGve5Fn) 群组或 QQ 群（630943368）。
 
 依然遵循原文，采用 [WTFPL](http://www.wtfpl.net/about/) 协议，同时附上原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
 
@@ -90,7 +90,7 @@
 	- 如果原文本身就在玩梗，或者语气非常轻松，那么也不需要使用非常正式的语言
 		- 原文：`NANI SORE!? BOTANIA IS OUTDATED!?`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 		- 译文：`(つд⊂)なにそれ！？植物魔法版本落后了！？`
-- 如果原文使用了拉丁化的日语，请将其重写为日语原文
+- 如果原文使用了拉丁化的日语，可以将其书写为对应中文的空耳，或者直接保留为罗马音
 - 如果原文使用了游戏电影等中的梗，请首先参考原出处的中文翻译，如果是日语而没有统一的翻译，则改写为日语原文（在此情况下请保持翻译与否的统一）
 	- 原文：`You notice Botania has updated. It fills you with determination.`（[Botania](https://github.com/Vazkii/Botania)，Vazkii，梗出自于Undertale）
 	- 译文：`你注意到植物魔法已经更新了。这使你充满了决心。`
