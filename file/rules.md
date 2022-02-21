@@ -150,6 +150,6 @@
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
 - 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境)
 
-## 10.参考资料
+## 11.参考资料
 
  - [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
