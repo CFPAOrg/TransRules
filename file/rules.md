@@ -34,13 +34,13 @@
 - 少数 Mod 使用 XML 格式的语言文件，对于这种文件请保留以 `<` 和 `>` 开头结尾的标签
 - 能量单位（EU、MJ 等）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
-- 指令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
+- 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
 	- 原文：`/achievement <give|take> <name|*> [player]`（Minecraft，Mojang）
 	- 译文：`/achievement <give|take> <成就名|*> [玩家]`
 
 ## 03.标点符号
 
-> 1.12 和 1.16 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
+> 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
 
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
 	- 原文：`Weighted Pressure Plate (Heavy)`（Minecraft，Mojang）
@@ -50,17 +50,28 @@
 - 仅修改文本当中的标点符号，对于 JSON 的格式标点符号请保留
 
 ## 04.排版
+
+### 通用规则
+
+- 英文字母、阿拉伯数字等非中文字符，不应加空格与中文文本分开
+	- 不适用于有特殊规定的专有名词
+	- 但在 Patchouli 提供的书籍文本中仍需添加空格
+	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
+	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。。`
+- 全角标点与其他字符之间不必留空格
+	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
+	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
+
+### 1.12.2 及以下版本特有规则
+
 - 当遇到英文字母、阿拉伯数字等非中文文本时，应在该段文本开头与结尾处加空格与中文文本分开
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
-	- 译文：`JEI 必须安装于服务器上，方能处理本指令，这条指令对 Minecraft 来说太长了。`
+	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
 	- 对于物品名来说也应如此做。
 		- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
 		- 译文：`TIS-3D 参考手册`
 	- 不适用于有特殊规定的专有名词
-- 数字与单位之间应留有空格
-- 全角标点与其他字符之间不必留空格
-	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
-	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要 20000 LP 启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要 500 LP）。`
+
 
 ## 05.专有名词
 
@@ -73,7 +84,7 @@
 	- 指 Mod 社区的某个人物，或贡献列表中的人物，或者已有商标，唱片等无中文翻译的则保留不翻译
 		- 如 `Vazbee`（[Magic Bees](https://github.com/MagicBees/MagicBees)，MysteriousAges, Arkandos, mezz, et al.）
 		- 原文：`Patreon Pie`（[Pam's HarvestCraft](https://github.com/MatrexsVigil/harvestcraft)，MatrexsVigil）
-		- 译文：`Patreon 派`
+		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 - 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译（注意默认方块、实体、物品是隐藏的，需要手动点击显示）
 - 目前可以**参考**原工程的[译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)进行翻译
