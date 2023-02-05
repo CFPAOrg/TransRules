@@ -57,7 +57,7 @@
 	- 不适用于有特殊规定的专有名词
 	- 但在 Patchouli 提供的书籍文本中仍需添加空格
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
-	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。。`
+	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
 - 全角标点与其他字符之间不必留空格
 	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
