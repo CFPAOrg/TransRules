@@ -1,4 +1,4 @@
-为了 Minecraft 中 Mod 翻译的统一，以及 Weblate 翻译项目的规范，本文档在社区原有规范文档的基础之上做了部分演绎和扩充，希望各位参与模组翻译的汉化者能尽量遵守本文档中的一些指示，将翻译文件标准化。
+为了 Minecraft 中 Mod 翻译的统一，本文档在社区原有规范文档的基础之上做了部分演绎和扩充，希望各位参与模组翻译的汉化者能尽量遵守本文档中的一些指示，将翻译文件标准化。
 
 如果你对本文档存在建议，或者想要联系我们，请访问我们的 [GitHub](https://github.com/CFPAOrg/TransRules) 或 QQ 群（630943368）。
 
@@ -7,7 +7,11 @@
 ## 01.普适原则
 
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
-	- 原文一般为 `en_us.lang` 文件内的内容
+	- 根据游戏版本的不同，原文一般为
+		- `en_us.lang` （1.12版本及以下）
+		- `en_us.json`（1.13-1.19版本）
+
+		 文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
@@ -17,17 +21,20 @@
 	- 译文：`高大无比的红柏树有着魔法的属性。`
 - 对于可以翻译的词都需要翻译，除非有特殊的语境（如 Botania 的更新日志）
 - 对于那些没有翻译的条目，或者翻译与原文完全一致，则可以直接复制英文原文
-- 对于不知道怎么翻译，提交时有暂未翻译的条目，请直接跳过这些条目，不要从 `en_us.lang` 中复制英文原文
+- 对于不知道怎么翻译，提交时有暂未翻译的条目，请直接跳过这些条目，不要复制英文原文
 - 如果是通过 GitHub 提交，请注意语言文件应当为 `UTF-8 without BOM` 的编码
-- 提交后请从[该页面](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/latest)下载资源包进行加载，进入游戏进行查看，确保翻译效果符合预期
 
 ## 02.保留字符（串）
 
-- 某些词条中出现的 `%s`、`%d` 等格式字符或以 `%` 围起来的字符串（如 `%msg%`），请保留这些字符串，并可以根据中文语序做出调整，它们会在代码中被替换为对应的文本，如果不确定最终效果，请打开游戏进行测试
+- 某些词条中出现的 `%s`、`%d` 等格式字符或以 `%` 围起来的字符串（如 `%msg%`），请保留这些字符串，它们会在代码中被替换为对应的文本。
+	- 格式字符可以根据中文语序做出调整，以适应翻译的需要
+		- 原文：`Summoned %s with difficulty %d`
+		- 译文：`召唤了难度为%2$d的%1$s`
+	- 如果不确定最终效果，请打开游戏进行测试
 - 注意百分号是全角还是半角，切勿直接使用必应、谷歌翻译标点符号
 - 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
-	- 具体字符含义请参考 Minecraft Wiki：[Formatting Codes](http://minecraft.gamepedia.com/Formatting_codes)
+	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
 - 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值请保留均不翻译
 	- 原文：`{"text":" has shared a ","color":"blue"}`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 	- 译文：`{"text":"分享了一本","color":"blue"}`
@@ -72,8 +79,13 @@
 		- 译文：`TIS-3D 参考手册`
 	- 不适用于有特殊规定的专有名词
 
+## 05.字幕
 
-## 05.专有名词
+- 字幕（Subtitle）指的是游戏中播放声音时右下角显示的文本（需要开启该功能）。在语言文件中对应翻译键中带有“subtitle”的条目。根据 Minecraft Wiki 上的[字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)的翻译原则，须在实体与动作之间加上`：`（注意是全角冒号）
+ - 原文：`Bee buzzes`（[原版](https://minecraft.fandom.com/wiki/Subtitles)）
+ - 译文：`蜜蜂：嗡嗡`
+
+## 06.专有名词
 
 - 人名/生物名/商标名/唱片名
 	- 有通用翻译的外文人名或商标，则进行翻译
@@ -86,11 +98,14 @@
 		- 原文：`Patreon Pie`（[Pam's HarvestCraft](https://github.com/MatrexsVigil/harvestcraft)，MatrexsVigil）
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准列表](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译（注意默认方块、实体、物品是隐藏的，需要手动点击显示）
-- 目前可以**参考**原工程的[译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)进行翻译
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
+- 目前可以**参考**
+	- [模组翻译参考词典](https://dict.mcmod.cn/)
+	- [译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
+	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的可用资源
 - 如果还没有找到，请自行拟定翻译并发送 PR 更新本工程的译名标准化列表，如果实在无法想出翻译，则暂时留为英文
 
-## 06.语言
+## 07.语言
 
 - 对于语言的正式程度，请参见词条原文
 	- 如果原文非常正式，那么请不要玩梗或卖萌
@@ -104,13 +119,13 @@
 	- 原文：`You notice Botania has updated. It fills you with determination.`（[Botania](https://github.com/Vazkii/Botania)，Vazkii，梗出自于Undertale）
 	- 译文：`你注意到植物魔法已经更新了。这使你充满了决心。`
 - 如果你自己做了一版卖萌形式或者玩梗形式的汉化文件，请不要发送到作者那里作为默认的汉化文件，仅流传在第三方就行了
-- 切勿在语言文件中玩不适宜的烂梗（尤其是带有较大负面影响的）
+- **切勿在语言文件中玩不适宜的烂梗**（尤其是带有较大负面影响的）
 
-## 07.Mod 名翻译
+## 08.Mod 名翻译
 
 - 这里的 Mod 名指的是语言文件内的 Mod 名
-- 翻译 Mod 名前请至少将整个 Mod 通玩一边，熟悉 Mod 的特性与系统
-- 如果是国产 Mod，则中文名采用 Mod 作者自定义的名称
+- 翻译 Mod 名前请至少将整个 Mod 通玩一遍，熟悉 Mod 的特性与整体风格
+- 如果是国创 Mod，则中文名采用 Mod 作者自定义的名称
 - 如果是经典 Mod，有早已熟知唯一译名，则采用该熟知译名
     - `IndustrialCraft2` -> `工业时代 2`
     - `Twilight Forest` -> `暮色森林`
@@ -122,7 +137,7 @@
 - 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
-## 08. 特殊字符
+## 09. 特殊字符
 
 主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。而 Minecraft 自带的字库只支持第一平面，无法显示这些字符。
 
@@ -148,12 +163,12 @@
 | [[石田]] | `\u9fec` |                                      |
 | [[奥气]] | `\u9feb` |                                      |
 
-## 09.署名
+## 10.署名
 
 - 除非作者在语言文件中专门提供了翻译者署名的地方，请不要添加任何其它标识标明翻译者的名字，特别是作者让你签署 CLA 的情况。你的贡献将会在文件上方的 Contribution 处显示
 - Weblate 上所有的翻译都会通过 GitHub 的 commit 信息查询到，请在注册 Weblate 账户时候尽可能选取 GitHub 注册时候使用的邮箱和用户名
 
-## 10.相关工具
+## 11.相关工具
 
 - GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过期**）
 - Snownee 写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
@@ -161,6 +176,6 @@
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
 - 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境)
 
-## 11.参考资料
+## 12.参考资料
 
  - [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
