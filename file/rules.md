@@ -2,18 +2,18 @@
 
 如果你对本文档存在建议，或者想要联系我们，请访问我们的 [GitHub](https://github.com/CFPAOrg/TransRules) 或 QQ 群（630943368）。
 
-依然遵循原文，采用 [WTFPL](http://www.wtfpl.net/about/) 协议，同时附上原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
+本文档遵循原文采用 [WTFPL](http://www.wtfpl.net/about/) 协议
+- 原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
 
 ## 01.普适原则
 
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
 	- 根据游戏版本的不同，原文一般为
 		- `en_us.lang` （1.12版本及以下）
-		- `en_us.json`（1.13-1.19版本）
-
-		 文件内的内容
+		- `en_us.json`（1.13-1.19版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
+
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
 	- 比如手册中存在的定语从句
@@ -31,6 +31,7 @@
 		- 原文：`Summoned %s with difficulty %d`
 		- 译文：`召唤了难度为%2$d的%1$s`
 	- 如果不确定最终效果，请打开游戏进行测试
+	
 - 注意百分号是全角还是半角，切勿直接使用必应、谷歌翻译标点符号
 - 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
@@ -52,6 +53,7 @@
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
 	- 原文：`Weighted Pressure Plate (Heavy)`（Minecraft，Mojang）
 	- 译文：`测重压力板（重质）`
+
 - 遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
 - 对于英文标点符号前或后的空格，请在修改标点符号为中文时删除
 - 仅修改文本当中的标点符号，对于 JSON 的格式标点符号请保留
@@ -62,9 +64,10 @@
 
 - 英文字母、阿拉伯数字等非中文字符，不应加空格与中文文本分开
 	- 不适用于有特殊规定的专有名词
-	- 但在 Patchouli 提供的书籍文本中仍需添加空格
-	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
-	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
+	- （但在 Patchouli 提供的书籍文本中仍需添加空格）
+		- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
+		- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
+
 - 全角标点与其他字符之间不必留空格
 	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
@@ -73,17 +76,19 @@
 
 - 当遇到英文字母、阿拉伯数字等非中文文本时，应在该段文本开头与结尾处加空格与中文文本分开
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
-	- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
-	- 对于物品名来说也应如此做。
-		- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
-		- 译文：`TIS-3D 参考手册`
-	- 不适用于有特殊规定的专有名词
+	- 译文：`此命令对 Minecraft 来说太长了，必须在服务端上安装 JEI 才能处理。`
+	
+- 对于物品名来说也应如此做。
+	- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
+	- 译文：`TIS-3D 参考手册`
+- 不适用于有特殊规定的专有名词
 
 ## 05.字幕
 
-- 字幕（Subtitle）指的是游戏中播放声音时右下角显示的文本（需要开启该功能）。在语言文件中对应翻译键中带有“subtitle”的条目。根据 Minecraft Wiki 上的[字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)的翻译原则，须在实体与动作之间加上`：`（注意是全角冒号）
- - 原文：`Bee buzzes`（[原版](https://minecraft.fandom.com/wiki/Subtitles)）
- - 译文：`蜜蜂：嗡嗡`
+- 字幕（Subtitle）指的是游戏中播放声音时右下角显示的文本（需要开启该功能）。在语言文件中对应翻译键中带有`subtitles`或`sounds`的条目。根据 Minecraft Wiki 上的[字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)的翻译习惯，须在实体与动作之间加上`：`（注意是全角冒号）
+
+	 - 原文：`Bee buzzes`（[Minecraft](https://minecraft.fandom.com/wiki/Subtitles), Mojang）
+ 	- 译文：`蜜蜂：嗡嗡`
 
 ## 06.专有名词
 
@@ -98,12 +103,13 @@
 		- 原文：`Patreon Pie`（[Pam's HarvestCraft](https://github.com/MatrexsVigil/harvestcraft)，MatrexsVigil）
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[译名标准化](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
+
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准化译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
-	- [译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
-	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的可用资源
-- 如果还没有找到，请自行拟定翻译并发送 PR 更新本工程的译名标准化列表，如果实在无法想出翻译，则暂时留为英文
+	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
+	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
+- 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
 ## 07.语言
 
@@ -114,6 +120,7 @@
 	- 如果原文本身就在玩梗，或者语气非常轻松，那么也不需要使用非常正式的语言
 		- 原文：`NANI SORE!? BOTANIA IS OUTDATED!?`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 		- 译文：`(つд⊂)なにそれ！？植物魔法版本落后了！？`
+
 - 如果原文使用了拉丁化的日语，可以将其书写为对应中文的[空耳](https://zh.moegirl.org.cn/index.php?title=%E7%A9%BA%E8%80%B3)，或者直接保留为罗马音
 - 如果原文使用了游戏电影等中的梗，请首先参考原出处的中文翻译，如果是日语而没有统一的翻译，则改写为日语原文（在此情况下请保持翻译与否的统一）
 	- 原文：`You notice Botania has updated. It fills you with determination.`（[Botania](https://github.com/Vazkii/Botania)，Vazkii，梗出自于Undertale）
@@ -124,6 +131,7 @@
 ## 08.Mod 名翻译
 
 - 这里的 Mod 名指的是语言文件内的 Mod 名
+
 - 翻译 Mod 名前请至少将整个 Mod 通玩一遍，熟悉 Mod 的特性与整体风格
 - 如果是国创 Mod，则中文名采用 Mod 作者自定义的名称
 - 如果是经典 Mod，有早已熟知唯一译名，则采用该熟知译名
@@ -133,7 +141,7 @@
     - `Forestry` -> `林业`
     - `Logistics Pipes` -> `物流管道`
     - `Chisel` -> `凿子`
-- 如以上均不符，则在汉化文件内保留英文，民间翻译仅供流传使用。有一定用户量后，如果某一民间翻译人气非常高，则之后会采用人气最高版本的翻译（如 Minecraft，我的世界）
+- 如以上均不符，则在汉化文件内保留英文，外部社区翻译仅供流传使用。有一定用户量后，如果某一社区翻译人气非常高，则之后会采用人气最高版本的翻译（如 Minecraft，我的世界）
 - 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
@@ -166,7 +174,6 @@
 ## 10.署名
 
 - 除非作者在语言文件中专门提供了翻译者署名的地方，请不要添加任何其它标识标明翻译者的名字，特别是作者让你签署 CLA 的情况。你的贡献将会在文件上方的 Contribution 处显示
-- Weblate 上所有的翻译都会通过 GitHub 的 commit 信息查询到，请在注册 Weblate 账户时候尽可能选取 GitHub 注册时候使用的邮箱和用户名
 
 ## 11.相关工具
 
