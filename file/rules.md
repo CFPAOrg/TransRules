@@ -9,7 +9,7 @@
 
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
 	- 根据游戏版本的不同，原文一般为
-		- `en_us.lang` （1.12版本及以下）
+		- `en_us.lang`（1.12版本及以下）
 		- `en_us.json`（1.13-1.19版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
