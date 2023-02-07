@@ -85,7 +85,7 @@
 
 ## 05.字幕
 
-- 字幕（Subtitle）指的是游戏中播放声音时右下角显示的文本（需要开启该功能）。在语言文件中对应翻译键中带有`subtitles`或`sounds`的条目。根据 Minecraft Wiki 上的[字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)的翻译习惯，须在实体与动作之间加上`：`（注意是全角冒号）
+- 字幕（Subtitle）指的是游戏中播放声音时右下角显示的文本（需要开启该功能）。在语言文件中对应翻译键中带有`subtitles`或`sound`的条目。根据 Minecraft Wiki 上的[字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)的翻译习惯，须在实体与动作之间加上`：`（注意是全角冒号）
 
 	 - 原文：`Bee buzzes`（[Minecraft](https://minecraft.fandom.com/wiki/Subtitles), Mojang）
  	- 译文：`蜜蜂：嗡嗡`
