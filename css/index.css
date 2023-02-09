@@ -53,3 +53,7 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+
+p {
+    margin: 0 0 0px;
+}
