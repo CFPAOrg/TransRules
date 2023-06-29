@@ -46,7 +46,7 @@
 	- 原文：`/achievement <give|take> <name|*> [player]`（Minecraft，Mojang）
 	- 译文：`/achievement <give|take> <成就名|*> [玩家]`
 
-## 03.标点符号
+## 03.标点符号 <!-- 1.20+标点符号TODO -->
 
 > 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
 
@@ -71,6 +71,10 @@
 - 全角标点与其他字符之间不必留空格
 	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
+
+- 阿拉伯数字与英文单位之间不必添加空格
+	- 原文：`Ideal for decoration, holding 50mb of fluid. Retains liquid when broken.`([Tinkers' Construct 3](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/src/main/resources/assets/tconstruct/lang/en_us.json), SlimeKnights)
+	- 译文：`理想的装饰建材，能存储50mB的流体。被破坏时仍能保留其中的液体。`
 
 ### 1.12.2 及以下版本特有规则
 
@@ -107,7 +111,7 @@
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准化译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
@@ -149,7 +153,7 @@
 - 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
-## 09. 特殊字符
+## 09. 特殊字符 <!-- 1.20+特殊字符更新TODO -->
 
 主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。而 Minecraft 自带的字库只支持第一平面，无法显示这些字符。
 
