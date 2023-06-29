@@ -3,7 +3,7 @@
 如果你对本文档存在建议，或者想要联系我们，请访问我们的 [GitHub](https://github.com/CFPAOrg/TransRules) 或 QQ 群（630943368）。
 
 本文档遵循原文采用 [WTFPL](http://www.wtfpl.net/about/) 协议
-- 原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
+- 原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>（有删改）。
 
 ## 01.普适原则
 
