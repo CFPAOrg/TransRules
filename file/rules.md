@@ -10,13 +10,13 @@
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
 	- 根据游戏版本的不同，原文一般为
 		- `en_us.lang`（1.12版本及以下）
-		- `en_us.json`（1.13-1.19版本）文件内的内容
+		- `en_us.json`（1.13-1.20版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
 
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
-	- 比如手册中存在的定语从句
+	- 比如手册中存在的定语从句或被动语态
 	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
 - 对于可以翻译的词都需要翻译，除非有特殊的语境（如 Botania 的更新日志）
@@ -185,11 +185,11 @@
 
 ## 11.相关工具
 
-- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过期**）
 - Snownee 写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
 - craft 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
-- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境)
+- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过时**）
+- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境，**已过时**)
 
 ## 12.参考资料
 
