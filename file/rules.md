@@ -9,11 +9,10 @@
 
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
 	- 根据游戏版本的不同，原文一般为
-		- `en_us.lang`（1.12版本及以下）
-		- `en_us.json`（1.13-1.20版本）文件内的内容
+		- `en_us.lang`（1.11 - 1.12.2 版本）
+		- `en_us.json`（1.13 - 1.20 版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
-
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
 	- 比如手册中存在的定语从句或被动语态
@@ -46,13 +45,13 @@
 	- 原文：`/achievement <give|take> <name|*> [player]`（Minecraft，Mojang）
 	- 译文：`/achievement <give|take> <成就名|*> [玩家]`
 
-## 03.标点符号 <!-- 1.20+标点符号TODO -->
+## 03.标点符号
 
 > 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
 
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
-	- 原文：`Weighted Pressure Plate (Heavy)`（Minecraft，Mojang）
-	- 译文：`测重压力板（重质）`
+	- 原文：`Free fall from the top of the world (build limit) to the bottom of the world and survive`（Minecraft，Mojang）
+	- 译文：`从世界顶部（建筑高度限制处）自由落体，坠至世界底部并存活下来`
 
 - 遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
 - 对于英文标点符号前或后的空格，请在修改标点符号为中文时删除
@@ -73,7 +72,7 @@
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
 
 - 阿拉伯数字与英文单位之间不必添加空格
-	- 原文：`Ideal for decoration, holding 50mb of fluid. Retains liquid when broken.`([Tinkers' Construct 3](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/src/main/resources/assets/tconstruct/lang/en_us.json), SlimeKnights)
+	- 原文：`Ideal for decoration, holding 50mb of fluid. Retains liquid when broken.`([Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/src/main/resources/assets/tconstruct/lang/en_us.json), SlimeKnights)
 	- 译文：`理想的装饰建材，能存储50mB的流体。被破坏时仍能保留其中的液体。`
 
 ### 1.12.2 及以下版本特有规则
@@ -116,7 +115,7 @@
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
 	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
-	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
+	- 以及 [CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
 - 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
 ## 07.语言
@@ -145,7 +144,7 @@
 - 如果是经典 Mod，有早已熟知唯一译名，则采用该熟知译名
     - `IndustrialCraft2` -> `工业时代 2`
     - `Twilight Forest` -> `暮色森林`
-- 如果Mod名为术语或者单词翻译不存在歧义，则采用翻译名
+- 如果 Mod 名为术语或者单词翻译不存在歧义，则采用翻译名
     - `Forestry` -> `林业`
     - `Logistics Pipes` -> `物流管道`
     - `Chisel` -> `凿子`
@@ -153,12 +152,13 @@
 - 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
-## 09. 特殊字符 <!-- 1.20+特殊字符更新TODO -->
+## 09. 特殊字符
 
-主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。而 Minecraft 自带的字库只支持第一平面，无法显示这些字符。
+主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，自带的字库只支持第一平面，无法显示这些字符。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
 
-我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
-
+ <!--
+ 我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
+ -->
 对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。
 
 | 翻译文本 | 转换字符 |                 备注                 |
@@ -174,12 +174,12 @@
 | [[钅哥]] | `\u9fd4` |                                      |
 | [[钅尔]] | `\u9fed` |                                      |
 | [[钅夫]] | `\ue90a` |                                      |
-|    镆    | `\u9546` | 此元素名已存在对应字符，无需修改替换  |
+|    镆    | `\u9546` |  此元素名已存在对应字符，无需修改替换  |
 | [[钅立]] | `\ue90c` |                                      |
 | [[石田]] | `\u9fec` |                                      |
 | [[奥气]] | `\u9feb` |                                      |
-<!--|   ……   ]| `\u22ef\u22ef` |                                 |
-|   ——     | `\u2e3a` |                                       |-->
+|   ……   ]| `\u22ef\u22ef` |                                 |
+|   ——     | `\u2e3a` |                                      |
 
 ## 10.署名
 
