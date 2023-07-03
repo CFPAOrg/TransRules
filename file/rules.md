@@ -42,8 +42,8 @@
 - 能量单位（EU、MJ 等）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
-	- 原文：`/achievement <give|take> <name|*> [player]`（Minecraft，Mojang）
-	- 译文：`/achievement <give|take> <成就名|*> [玩家]`
+	 原文：`/advancement (grant|revoke) <targets> everything`（Minecraft，Mojang）
+	- 译文：`/advancement (grant|revoke) <目标选择器参数> everything`
 
 ## 03.标点符号
 
@@ -114,7 +114,7 @@
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
-	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
+	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)（**部分已过时**）
 	- 以及 [CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
 - 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
@@ -154,13 +154,11 @@
 
 ## 09. 特殊字符
 
-主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，自带的字库只支持第一平面，无法显示这些字符。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
+主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，自带的字库只支持第一平面，无法显示这些字符。对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
 
  <!--
  我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
  -->
-对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。
-
 | 翻译文本 | 转换字符 |                 备注                 |
 | :------: | :----: | :----------------------------------: |
 | [[钅卢]] | `\ue900` |                                      |
