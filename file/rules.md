@@ -42,8 +42,8 @@
 - 能量单位（EU、MJ 等）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
-	 原文：`/advancement (grant|revoke) <targets> everything`（Minecraft，Mojang）
-	- 译文：`/advancement (grant|revoke) <目标选择器参数> everything`
+	 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
+	- 译文：`/time (add|query|set) <时间值>`
 
 ## 03.标点符号
 
