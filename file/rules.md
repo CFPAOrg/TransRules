@@ -63,7 +63,7 @@
 
 - 英文字母、阿拉伯数字等非中文字符，不应加空格与中文文本分开
 	- 不适用于有特殊规定的专有名词
-	- （但在 Patchouli 提供的书籍文本中仍需添加空格）
+	- 在 Patchouli 提供的书籍文本中仍需添加空格
 		- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 		- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
 
@@ -149,7 +149,7 @@
     - `Logistics Pipes` -> `物流管道`
     - `Chisel` -> `凿子`
 - 如以上均不符，则在汉化文件内保留英文，外部社区翻译仅供流传使用。有一定用户量后，如果某一社区翻译人气非常高，则之后会采用人气最高版本的翻译（如 Minecraft，我的世界）
-- 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
+- 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gǔn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
 ## 09. 特殊字符
