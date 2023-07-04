@@ -35,11 +35,12 @@
 - 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
 	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
-- 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值请保留均不翻译
+- 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值均不翻译，请保留
 	- 原文：`{"text":" has shared a ","color":"blue"}`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 	- 译文：`{"text":"分享了一本","color":"blue"}`
 - 少数 Mod 使用 XML 格式的语言文件，对于这种文件请保留以 `<` 和 `>` 开头结尾的标签
-- 能量单位（EU、MJ 等）请保留不翻译
+- 若语言文件所使用的格式上述未提及，请参照对应文件格式进行翻译，若不清楚请查找相应信息或询问其他有经验的译者
+- 能量单位、体积单位等（如：EU、MJ）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
 	 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
