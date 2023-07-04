@@ -43,7 +43,7 @@
 - 能量单位、体积单位等（如：EU、MJ）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
-	 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
+	- 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
 	- 译文：`/time (add|query|set) <时间>`
 
 ## 03.标点符号
@@ -116,7 +116,7 @@
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
 	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)（**部分已过时**）
-	- 以及 [CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
+	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
 - 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
 ## 07.语言
