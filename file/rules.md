@@ -3,20 +3,19 @@
 如果你对本文档存在建议，或者想要联系我们，请访问我们的 [GitHub](https://github.com/CFPAOrg/TransRules) 或 QQ 群（630943368）。
 
 本文档遵循原文采用 [WTFPL](http://www.wtfpl.net/about/) 协议
-- 原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>。
+- 原文链接：<https://github.com/Meow-J/Mod-Translation-Styleguide>（有删改）。
 
 ## 01.普适原则
 
 - **以原文为准**，除非原文实在无法简明翻译，不要存在意译
 	- 根据游戏版本的不同，原文一般为
-		- `en_us.lang`（1.12版本及以下）
-		- `en_us.json`（1.13-1.19版本）文件内的内容
+		- `en_us.lang`（1.11 - 1.12.2 版本）
+		- `en_us.json`（1.13 - 1.20 版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
     - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
-
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
-	- 比如手册中存在的定语从句
+	- 比如手册中存在的定语从句或被动语态
 	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
 - 对于可以翻译的词都需要翻译，除非有特殊的语境（如 Botania 的更新日志）
@@ -36,23 +35,24 @@
 - 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
 	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
-- 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值请保留均不翻译
+- 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值均不翻译，请保留
 	- 原文：`{"text":" has shared a ","color":"blue"}`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 	- 译文：`{"text":"分享了一本","color":"blue"}`
 - 少数 Mod 使用 XML 格式的语言文件，对于这种文件请保留以 `<` 和 `>` 开头结尾的标签
-- 能量单位（EU、MJ 等）请保留不翻译
+- 若语言文件所使用的格式上述未提及，请参照对应文件格式进行翻译，若不清楚请查找相应信息或询问其他有经验的译者
+- 能量单位、体积单位等（如：EU、MJ）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
-	- 原文：`/achievement <give|take> <name|*> [player]`（Minecraft，Mojang）
-	- 译文：`/achievement <give|take> <成就名|*> [玩家]`
+	 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
+	- 译文：`/time (add|query|set) <时间>`
 
 ## 03.标点符号
 
 > 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
 
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
-	- 原文：`Weighted Pressure Plate (Heavy)`（Minecraft，Mojang）
-	- 译文：`测重压力板（重质）`
+	- 原文：`Free fall from the top of the world (build limit) to the bottom of the world and survive`（Minecraft，Mojang）
+	- 译文：`从世界顶部（建筑高度限制处）自由落体，坠至世界底部并存活下来`
 
 - 遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
 - 对于英文标点符号前或后的空格，请在修改标点符号为中文时删除
@@ -64,13 +64,17 @@
 
 - 英文字母、阿拉伯数字等非中文字符，不应加空格与中文文本分开
 	- 不适用于有特殊规定的专有名词
-	- （但在 Patchouli 提供的书籍文本中仍需添加空格）
+	- 在 Patchouli 提供的书籍文本中仍需添加空格
 		- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 		- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
 
 - 全角标点与其他字符之间不必留空格
 	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
+
+- 阿拉伯数字与英文单位之间不必添加空格
+	- 原文：`Ideal for decoration, holding 50mb of fluid. Retains liquid when broken.`([Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/src/main/resources/assets/tconstruct/lang/en_us.json), SlimeKnights)
+	- 译文：`理想的装饰建材，能存储50mB的流体。被破坏时仍能保留其中的液体。`
 
 ### 1.12.2 及以下版本特有规则
 
@@ -107,12 +111,12 @@
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准化译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
-	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)
-	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
+	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)（**部分已过时**）
+	- 以及 [CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
 - 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
 ## 07.语言
@@ -141,22 +145,21 @@
 - 如果是经典 Mod，有早已熟知唯一译名，则采用该熟知译名
     - `IndustrialCraft2` -> `工业时代 2`
     - `Twilight Forest` -> `暮色森林`
-- 如果Mod名为术语或者单词翻译不存在歧义，则采用翻译名
+- 如果 Mod 名为术语或者单词翻译不存在歧义，则采用翻译名
     - `Forestry` -> `林业`
     - `Logistics Pipes` -> `物流管道`
     - `Chisel` -> `凿子`
 - 如以上均不符，则在汉化文件内保留英文，外部社区翻译仅供流传使用。有一定用户量后，如果某一社区翻译人气非常高，则之后会采用人气最高版本的翻译（如 Minecraft，我的世界）
-- 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gùn)` 
+- 部分模组存在多组分栏，建议统一采用 `模组名丨分栏名` 进行书写，中间的竖线为汉字 `丨(gǔn)` 
     - `Forestry Apiculture` -> `林业丨养蜂`
 
 ## 09. 特殊字符
 
-主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。而 Minecraft 自带的字库只支持第一平面，无法显示这些字符。
+主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，自带的字库只支持第一平面，无法显示这些字符。对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
 
-我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
-
-对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。
-
+ <!--
+ 我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
+ -->
 | 翻译文本 | 转换字符 |                 备注                 |
 | :------: | :----: | :----------------------------------: |
 | [[钅卢]] | `\ue900` |                                      |
@@ -170,10 +173,12 @@
 | [[钅哥]] | `\u9fd4` |                                      |
 | [[钅尔]] | `\u9fed` |                                      |
 | [[钅夫]] | `\ue90a` |                                      |
-|    镆    | `\u9546` | 此元素名已存在对应字符，无需修改替换    |
+|    镆    | `\u9546` |  此元素名已存在对应字符，无需修改替换  |
 | [[钅立]] | `\ue90c` |                                      |
 | [[石田]] | `\u9fec` |                                      |
 | [[奥气]] | `\u9feb` |                                      |
+|   ……     | `\u22ef\u22ef` |                                |
+|   ——     | `\u2e3a` |                                      |
 
 ## 10.署名
 
@@ -181,11 +186,11 @@
 
 ## 11.相关工具
 
-- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过期**）
 - Snownee 写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
 - craft 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
-- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境)
+- GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过时**）
+- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境，**已过时**)
 
 ## 12.参考资料
 
