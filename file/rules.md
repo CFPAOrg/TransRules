@@ -18,7 +18,7 @@
 	- 比如手册中存在的定语从句或被动语态
 	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
-- 对于可以翻译的词都需要翻译，除非有特殊的语境（如 Botania 的更新日志）
+- 此前版本的翻译可以作为参考但不是唯一参考
 - 对于那些没有翻译的条目，或者翻译与原文完全一致，则可以直接复制英文原文
 - 对于不知道怎么翻译，提交时有暂未翻译的条目，请直接跳过这些条目，不要复制英文原文
 - 如果是通过 GitHub 提交，请注意语言文件应当为 `UTF-8 without BOM` 的编码
