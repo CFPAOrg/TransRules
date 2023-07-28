@@ -25,12 +25,11 @@
 
 ## 02.保留字符（串）
 
-- 某些词条中出现的 `%s`、`%d` 等格式字符或以 `%` 围起来的字符串（如 `%msg%`），请保留这些字符串，它们会在代码中被替换为对应的文本。
+- 某些词条中出现的 `%s`、`%d` 等格式字符或以 `%` 围起来的字符串（如 `%msg%`），请保留这些字符串，它们会在代码中被替换为对应的文本
 	- 格式字符可以通过添加位置标识的方式调换前后顺序，以适应翻译的需要
 		- 原文：`Summoned %s with difficulty %d`
 		- 译文：`召唤了难度为%2$d的%1$s`
 	- 如果不确定最终效果，请打开游戏进行测试
-	
 - 注意百分号是全角还是半角，切勿直接使用必应、谷歌翻译标点符号
 - 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
@@ -48,7 +47,7 @@
 
 ## 03.标点符号
 
-> 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示。
+> 汉化资源包中添加了中文全角标点修复补丁，现在全角标点均按照正常的宽度显示
 
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
 	- 原文：`Free fall from the top of the world (build limit) to the bottom of the world and survive`（Minecraft，Mojang）
@@ -82,7 +81,7 @@
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 	- 译文：`此命令对 Minecraft 来说太长了，必须在服务端上安装 JEI 才能处理。`
 	
-- 对于物品名来说也应如此做。
+- 对于物品名来说也应如此
 	- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
 	- 译文：`TIS-3D 参考手册`
 - 不适用于有特殊规定的专有名词
@@ -111,6 +110,7 @@
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 
+- 对于模组名，不必翻译，保留原文即可
 - 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
@@ -139,7 +139,6 @@
 ## 08.Mod 名翻译
 
 - 这里的 Mod 名指的是语言文件内的 Mod 名
-
 - 翻译 Mod 名前请至少将整个 Mod 通玩一遍，熟悉 Mod 的特性与整体风格
 - 如果是国创 Mod，则中文名采用 Mod 作者自定义的名称
 - 如果是经典 Mod，有早已熟知唯一译名，则采用该熟知译名
@@ -186,8 +185,9 @@
 
 ## 11.相关工具
 
-- Snownee 写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
-- craft 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
+- Tryanks 编写的适用于 Minecraft 1.16+ 版本的 Minecraft [模组翻译器](https://github.com/CFPATools/Minecraft-Mods-Translator)
+- Snownee 编写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
+- crafteverywhere 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
 - GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过时**）
 - 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境，**已过时**)
