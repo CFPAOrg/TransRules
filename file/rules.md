@@ -18,7 +18,7 @@
 	- 比如手册中存在的定语从句或被动语态
 	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
-- 此前版本的翻译可以作为参考但不是唯一参考
+- 此前版本的翻译**可以**作为参考但**不是**唯一参考
 - 对于那些没有翻译的条目，或者翻译与原文完全一致，则可以直接复制英文原文
 - 对于不知道怎么翻译，提交时有暂未翻译的条目，请直接跳过这些条目，不要复制英文原文
 - 如果是通过 GitHub 提交，请注意语言文件应当为 `UTF-8 without BOM` 的编码
@@ -52,8 +52,12 @@
 - 请与原版 Minecraft 保持统一，使用中文的标点符号。如果是保留不翻译的英文中的标点符号，则仍保留英文的标点符号
 	- 原文：`Free fall from the top of the world (build limit) to the bottom of the world and survive`（Minecraft，Mojang）
 	- 译文：`从世界顶部（建筑高度限制处）自由落体，坠至世界底部并存活下来`
-
-- 遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
+- 多数情况下请遵守《标点符号用法》：[GB(T)15834-2011](http://people.ubuntu.com/~happyaron/l10n/GB(T)15834-2011.html)
+- 对于英文中“[]”的翻译，只需保证本模组统一即可，不做翻译要求
+	- 以下为常见的几种处理方法
+		- 将“[]”更改为实心括号“【】”
+		- 将“[]”更改为全角方括号“［］”
+		- 将“[]”更改为空心角括号“『』”
 - 对于英文标点符号前或后的空格，请在修改标点符号为中文时删除
 - 仅修改文本当中的标点符号，对于 JSON 的格式标点符号请保留
 
@@ -66,11 +70,9 @@
 	- 在 Patchouli 提供的书籍文本中仍需添加空格
 		- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 		- 译文：`此命令对Minecraft来说太长了，必须在服务端上安装JEI才能处理。`
-
 - 全角标点与其他字符之间不必留空格
 	- 原文：`While simple in theory, in practice it was a little difficult. For my simple network at the time, the activation cost was quite steep because of the initial pressure required, and the drain for each source of lava was not something I was prepared for. (20000 LP to activate, 500 LP per source block)`（[Blood Magic](https://github.com/WayofTime/BloodMagic/blob/1.9/src/main/resources/assets/bloodmagicguide/lang/en_US.lang), WayOfTime, et al.）
 	- 译文：`然而这只是理论。说起来容易做起来难：当时我使用的简易网络完全不适合拿来为这个仪式供应魔力，不仅挤压熔岩需要的压力巨大（需要20000LP启动仪式），抽取熔岩的开支也不小（每产生一格熔岩需要500LP）。`
-
 - 阿拉伯数字与英文单位之间不必添加空格
 	- 原文：`Ideal for decoration, holding 50mb of fluid. Retains liquid when broken.`([Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/src/main/resources/assets/tconstruct/lang/en_us.json), SlimeKnights)
 	- 译文：`理想的装饰建材，能存储50mB的流体。被破坏时仍能保留其中的液体。`
@@ -80,7 +82,6 @@
 - 当遇到英文字母、阿拉伯数字等非中文文本时，应在该段文本开头与结尾处加空格与中文文本分开
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 	- 译文：`此命令对 Minecraft 来说太长了，必须在服务端上安装 JEI 才能处理。`
-	
 - 对于物品名来说也应如此
 	- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
 	- 译文：`TIS-3D 参考手册`
@@ -109,7 +110,6 @@
 		- 原文：`Patreon Pie`（[Pam's HarvestCraft](https://github.com/MatrexsVigil/harvestcraft)，MatrexsVigil）
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
-
 - 对于模组名，不必翻译，保留原文即可
 - 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
@@ -128,7 +128,6 @@
 	- 如果原文本身就在玩梗，或者语气非常轻松，那么也不需要使用非常正式的语言
 		- 原文：`NANI SORE!? BOTANIA IS OUTDATED!?`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 		- 译文：`(つд⊂)なにそれ！？植物魔法版本落后了！？`
-
 - 如果原文使用了拉丁化的日语，可以将其书写为对应中文的[空耳](https://zh.moegirl.org.cn/index.php?title=%E7%A9%BA%E8%80%B3)，或者直接保留为罗马音
 - 如果原文使用了游戏电影等中的梗，请首先参考原出处的中文翻译，如果是日语而没有统一的翻译，则改写为日语原文（在此情况下请保持翻译与否的统一）
 	- 原文：`You notice Botania has updated. It fills you with determination.`（[Botania](https://github.com/Vazkii/Botania)，Vazkii，梗出自于Undertale）
