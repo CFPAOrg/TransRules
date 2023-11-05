@@ -184,8 +184,8 @@
 
 ## 11.相关工具
 
-- Tryanks 编写的适用于 Minecraft 1.16+ 版本的 Minecraft [模组翻译器](https://github.com/CFPATools/Minecraft-Mods-Translator)
-- Snownee 编写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)（**已归档**）
+- Tryanks 编写的适用于 Minecraft 1.16+ 版本的 Minecraft [模组翻译器](https://github.com/CFPATools/Minecraft-Mods-Translator)（**已归档**）
+- Snownee 编写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
 - crafteverywhere 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
 - GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过时**）
