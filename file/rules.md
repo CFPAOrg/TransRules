@@ -16,7 +16,7 @@
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
 	- 比如手册中存在的定语从句或被动语态
-	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
+	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://www.curseforge.com/minecraft/mc-mods/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
 - 此前版本的翻译**可以**作为参考但**不是**唯一参考
 - 对于那些没有翻译的条目，或者翻译与原文完全一致，则可以直接复制英文原文
@@ -82,7 +82,7 @@
 	- 原文：`JEI must be on the server to handle this Chat Command, it is too long for Minecraft to send.`（[Just Enough Items](https://github.com/mezz/JustEnoughItems/blob/1.12/src/main/resources/assets/jei/lang/en_us.lang), mezz）
 	- 译文：`此命令对 Minecraft 来说太长了，必须在服务端上安装 JEI 才能处理。`
 - 对于物品名来说也应如此
-	- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang#L4), fnuecke, et al.)
+	- 原文：`TIS-3D Reference Manual` ([TIS-3D](https://github.com/MightyPirates/TIS-3D/blob/master-MC1.11/src/main/resources/assets/tis3d/lang/en_US.lang), fnuecke, et al.)
 	- 译文：`TIS-3D 参考手册`
 - 不适用于有特殊规定的专有名词
 
