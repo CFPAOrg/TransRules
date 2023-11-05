@@ -7,18 +7,18 @@
 
 ## 01.普适原则
 
-- **以原文为准**，除非原文实在无法简明翻译，不要存在意译
+- **以原文为准**。若原文确实无法简明翻译可考虑意译
 	- 根据游戏版本的不同，原文一般为
 		- `en_us.lang`（1.11 - 1.12.2 版本）
 		- `en_us.json`（1.13 - 1.20 版本）文件内的内容
 	- 但如果是日站 Mod 或者其它语言的 Mod 请参考对应的源语言文件
-    - 原文确定是作者生造词且无特殊含义，可采用音译（比如 [Environmental Tech](https://minecraft.curseforge.com/projects/environmental-tech) 模组）
+    - 若原文确定是生造词，应先根据游戏内表现和生造词词根等拟定翻译，若无特殊意义则可采用音译（例如 [Environmental Tech](https://www.curseforge.com/minecraft/mc-mods/environmental-tech) ）
 - 在翻译之前熟悉翻译词条的位置，以及对应物品或者选项的功能，确保能知道语境下词条的真正意义
 - 符合中文表达习惯，如果无法转换则改写句子形式
 	- 比如手册中存在的定语从句或被动语态
 	- 原文：`The Red Cedar Tree is a large tree that has magical properties.`（[Totemic](https://minecraft.curseforge.com/projects/totemic) 模组）
 	- 译文：`高大无比的红柏树有着魔法的属性。`
-- 此前版本的翻译**可以**作为参考但**不是**唯一参考  
+- 此前版本的翻译**可以**作为参考但**不是**唯一参考
 - 对于那些没有翻译的条目，或者翻译与原文完全一致，则可以直接复制英文原文
 - 对于不知道怎么翻译，提交时有暂未翻译的条目，请直接跳过这些条目，不要复制英文原文
 - 如果是通过 GitHub 提交，请注意语言文件应当为 `UTF-8 without BOM` 的编码
@@ -30,8 +30,8 @@
 		- 原文：`Summoned %s with difficulty %d`
 		- 译文：`召唤了难度为%2$d的%1$s`
 	- 如果不确定最终效果，请打开游戏进行测试
-- 注意百分号是全角还是半角，切勿直接使用必应、谷歌等网站或软件翻译标点符号
-- 在某些 Mod 的手册中会使用 `<br>` 作为换行符，遇到时请保留
+- 注意百分号是全角还是半角，切勿直接使用百度、必应、谷歌等网站或软件翻译标点符号
+- 在某些 Mod 的手册中会使用 `<br>`、`\n` 等作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
 	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
 - 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值均不翻译，请保留
@@ -39,7 +39,7 @@
 	- 译文：`{"text":"分享了一本","color":"blue"}`
 - 少数 Mod 使用 XML 格式的语言文件，对于这种文件请保留以 `<` 和 `>` 开头结尾的标签
 - 若语言文件所使用的格式上述未提及，请参照对应文件格式进行翻译，若不清楚请查找相应信息或询问其他有经验的译者
-- 能量单位、体积单位等（如：EU、MJ）请保留不翻译
+- 能量单位、体积单位等（如：FE、RF、MB）请保留不翻译
 - 按键（如 Shift、Ctrl 等）请不要翻译，并将首字母大写（部分模组语言文件会将 Shift 键描述为 `Sneak`）
 - 命令（如 `/say`，`/effect`）以及明文参数请保留不要翻译，而解释性参数则需要翻译
 	- 原文：`/time (add|query|set) <time>`（Minecraft，Mojang）
@@ -110,13 +110,13 @@
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 - 对于模组名，不必翻译，保留原文即可
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)进行翻译
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)按照对应 Minecraft 版本进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
 	- [我的世界中英术语库](https://github.com/CFPAOrg/Glossary)
 	- [模组译名标准化列表](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/glossary.md)（**部分已过时**）
-	- 以及[CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
+	- [CFPA汉化仓库主页](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package)下的各类可用资源
 - 如果还没有找到，请自行拟定翻译，如果实在无法想出翻译，则暂时留为英文
 
 ## 07.语言
@@ -153,7 +153,7 @@
 
 ## 09. 特殊字符
 
-主要指 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，自带的字库只支持第一平面，无法显示这些字符。对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
+主要指部分 104 ~ 118 号元素的中文名。这些字符是最近十几年逐步确定命名的元素，其绝大部分使用了新造字或者罕见字。在 1.19.4 及以下的 Minecraft 版本，因自带的字库只支持第一平面，无法显示这些字符。对于这些字符，在翻译时按照如下格式，会在打包系统中自动被处理，从而在游戏内正确显示。同时，对于省略号和破折号，我们也对其进行了特殊的处理。使得排版看起来更规则也更整齐。
 
  <!--
  我们采用了 Unicode 的私人使用区域，配合资源包的打包系统来显示这些字符，具体内容可参考文章[《为什么我们能看到汉字？》](https://www.bilibili.com/read/cv8362858)。
@@ -185,12 +185,17 @@
 ## 11.相关工具
 
 - Tryanks 编写的适用于 Minecraft 1.16+ 版本的 Minecraft [模组翻译器](https://github.com/CFPATools/Minecraft-Mods-Translator)
-- Snownee 编写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)
+- Snownee 编写的一个[在线网页工具](https://snownee.github.io/l10n-tools/update.html)（**已归档**）
 - crafteverywhere 之前写的一个[文本更新检测工具](https://github.com/crafteverywhere/Craft_Minecraft_Mod_Localization/blob/master/lang_checker.py)（运行需要 Python 3+ 环境）
 - GitHub [语言文件关键字查询](https://github.com/Meow-J/Mod-Translation-Styleguide/blob/master/tools/GithubKeywordQuery.py)（需要 Python 3.4+ 环境）
 - GWYOG 的 [LocalizationAssistant](https://github.com/GWYOG/LocalizationAssistant)（运行需要 Java 运行环境，**已过时**）
-- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境，**已过时**)
+- 3TUSK 的[文本自动更新工具](https://github.com/3TUSK/TemporaryLocalization/blob/1.9/Tool_Update.lua)（运行需要 Lua 5.3+ 运行环境，**已过时**）
 
 ## 12.参考资料
 
  - [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
+
+<!--
+TODO List
+1.待中文Wiki搬迁完毕后将仓库下所有涉及Minecraft Wiki的域名的内容全部更改
+-->
