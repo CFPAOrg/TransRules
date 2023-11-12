@@ -33,7 +33,7 @@
 - 注意百分号是全角还是半角，切勿直接使用百度、必应、谷歌等网站或软件翻译标点符号
 - 在某些 Mod 的手册中会使用 `<br>`、`\n` 等作为换行符，遇到时请保留
 - 某些 Mod 使用 `&` 或者 `§` 后加一个字符或者数字表示颜色或者格式，在此标识出现后的文字都将变成对应的颜色或者格式，一般使用 `&0` 或者 `§0` 恢复默认颜色，`&r` 或者 `§r` 恢复默认格式。遇到时请保留，并将其放到对应文本两侧
-	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
+	- 具体字符含义请参考 Minecraft Wiki：[格式化代码](https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81)
 - 在遇到 tellraw JSON 字符串的时候，请**仅**翻译 `"text"` 项的值，对于其它的键和值均不翻译，请保留
 	- 原文：`{"text":" has shared a ","color":"blue"}`（[Botania](https://github.com/Vazkii/Botania)，Vazkii）
 	- 译文：`{"text":"分享了一本","color":"blue"}`
@@ -88,7 +88,7 @@
 
 ## 05.字幕
 
-- [字幕](https://minecraft.fandom.com/zh/wiki/%E5%AD%97%E5%B9%95)（Subtitle）一般是翻译键中带有 `subtitles` 或 `sound` 的条目。
+- [字幕](https://zh.minecraft.wiki/w/%E5%AD%97%E5%B9%95)（Subtitle）一般是翻译键中带有 `subtitles` 或 `sound` 的条目。
 - 若字幕原文为主谓结构，则应译作 `主体：声音` 的格式。
   	- 原文：`Bee buzzes`（Minecraft，Mojang）
     - 译文：`蜜蜂：嗡嗡`
@@ -110,7 +110,7 @@
 		- 译文：`Patreon派`
 	- 对于其它的名字，保留原文不翻译
 - 对于模组名，不必翻译，保留原文即可
-- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)按照对应 Minecraft 版本进行翻译
+- 对于原版中出现过的词语请根据 Minecraft Wiki 上的[标准译名](https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%AF%91%E5%90%8D%E6%A0%87%E5%87%86%E5%8C%96)按照对应 Minecraft 版本进行翻译
 - 若某词在现实中有对应的事物存在，但游戏中的表现与该实际事物不相关，应采取手段使该词的译名与现实不同
 - 目前可以**参考**
 	- [模组翻译参考词典](https://dict.mcmod.cn/)
@@ -194,8 +194,3 @@
 ## 12.参考资料
 
  - [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)
-
-<!--
-TODO List
-1.待中文Wiki搬迁完毕后将仓库下所有涉及Minecraft Wiki的域名的内容全部更改
--->
